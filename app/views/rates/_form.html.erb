@@ -1,0 +1,47 @@
+<%= form_for(rate) do |f| %>
+  <% if rate.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(rate.errors.count, "error") %> prohibited this rate from being saved:</h2>
+
+      <ul>
+      <% rate.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :carrier %>
+    <%= f.text_field :carrier %>
+  </div>
+
+  <div class="field">
+    <%= f.label :country %>
+    <%= f.text_field :country %>
+  </div>
+
+  <div class="field">
+    <%= f.label :postcode %>
+    <%= f.text_field :postcode %>
+  </div>
+
+  <div class="field">
+    <%= f.label :gewicht %>
+    <%= f.text_field :gewicht %>
+  </div>
+
+  <div class="field">
+    <%= f.label :prijs %>
+    <%= f.text_field :prijs %>
+  </div>
+
+  <div class="field">
+    <%= f.label :payant %>
+    <%= f.text_field :payant %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

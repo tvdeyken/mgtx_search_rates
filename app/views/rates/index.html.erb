@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Rates</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Carrier</th>
+      <th>Country</th>
+      <th>Postcode</th>
+      <th>Gewicht</th>
+      <th>Prijs</th>
+      <th>Payant?</th>
+      <th>Expiration date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rates.each do |rate| %>
+      <tr>
+        <td><%= rate.carrier %></td>
+        <td><%= rate.country %></td>
+        <td><%= rate.postcode %></td>
+        <td><%= rate.gewicht %></td>
+        <td><%= rate.prijs %></td>
+        <td><%= rate.payant %></td>
+        <td><%= rate.exp_date %></td>
+        <td><%= link_to 'Show', rate %></td>
+        <td><%= link_to 'Edit', edit_rate_path(rate) %></td>
+        <td><%= link_to 'Destroy', rate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Rate', new_rate_path %>

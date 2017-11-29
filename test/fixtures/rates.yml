@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  carrier: MyString
+  country: MyString
+  postcode: MyString
+  gewicht: 9.99
+  prijs: 9.99
+  payant: MyString
+
+two:
+  carrier: MyString
+  country: MyString
+  postcode: MyString
+  gewicht: 9.99
+  prijs: 9.99
+  payant: MyString
