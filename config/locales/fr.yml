@@ -20,6 +20,6 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
-  tar_list: "Rates list"
-  carrier: "Carrier"
+  hello: "Bonjour le monde"
+  tar_list: "Liste de prix"
+  carrier: "Transporteur"

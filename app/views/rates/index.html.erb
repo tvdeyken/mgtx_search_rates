@@ -1,17 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Rates</h1>
+<h1><%=t :tar_list %></h1>
 
 <table>
   <thead>
     <tr>
-      <th>Carrier</th>
-      <th>Country</th>
-      <th>Postcode</th>
-      <th>Gewicht</th>
-      <th>Prijs</th>
-      <th>Payant?</th>
-      <th>Expiration date</th>
+      <th><%=t :carrier %></th>
+      <th><%=t :ee %></th>
+      <th><%=t :postcode %></th>
+      <th><%=t :gewicht %></th>
+      <th><%=t :prijs %></th>
+      <th><%=t :payant %></th>
+      <th><%=t :exp_date %></th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -26,9 +26,9 @@
         <td><%= rate.prijs %></td>
         <td><%= rate.payant %></td>
         <td><%= rate.exp_date %></td>
-        <td><%= link_to 'Show', rate %></td>
-        <td><%= link_to 'Edit', edit_rate_path(rate) %></td>
-        <td><%= link_to 'Destroy', rate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Manifester', rate %></td>
+        <td><%= link_to 'Modifier', edit_rate_path(rate) %></td>
+        <td><%= link_to 'Détruire', rate, method: :delete, data: { confirm: 'Êtes-vous sûr?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -36,4 +36,4 @@
 
 <br>
 
-<%= link_to 'New Rate', new_rate_path %>
+<%= link_to 'Nouveau taux', new_rate_path %>
